@@ -1,0 +1,1 @@
+`./bin/console app:test-foundry`
