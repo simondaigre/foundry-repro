@@ -2,7 +2,7 @@
 
 namespace App\Command;
 
-use App\Factory\OrderFactory;
+use App\Factory\SaleFactory;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -16,7 +16,7 @@ class TestFoundryCommand extends Command
 {
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        dd(OrderFactory::createOne()->getCustomer()->getUser());
+        SaleFactory::createOne();
 
         return Command::SUCCESS;
     }
